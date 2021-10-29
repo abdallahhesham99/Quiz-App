@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Why we use <br> tag?",
+        "answer_1": "To make text bold",
+        "answer_2": "To make horizontal line",
+        "answer_3": "To make line break in text",
+        "answer_4": "nothing before",
+        "right_answer" : "To make line break in text"
+    },
+    {
+        "title": "What does HTML stand for?",
+        "answer_1": "Home Tool Makrup Language",
+        "answer_2": "Hyper Text Markup Language",
+        "answer_3": "Hyperlink and Text Markup Language",
+        "answer_4": "nothing before",
+        "right_answer" : "Hyper Text Markup Language"
+    },
+    {
+        "title": "Choose the correct HTML element for the largest heading:",
+        "answer_1": "&lt;header&gt;",
+        "answer_2": "&lt;body&gt;",
+        "answer_3": "&lt;h1&gt;",
+        "answer_4": "nothing before",
+        "right_answer" : "&lt;h1&gt;"
+    },
+    {
+        "title": "What is the correct HTML for adding a background color?",
+        "answer_1": "<background>yellow</background>",
+        "answer_2": "<body style='background-color: yellow'></body>",
+        "answer_3": "<body bg='yellow'>",
+        "answer_4": "nothing before",
+        "right_answer" : "<body style='background-color: yellow'></body>"
+    },
+    {
+        "title": "Choose the correct HTML element to define important text",
+        "answer_1": "<i>",
+        "answer_2": "<important>",
+        "answer_3": "<strong>",
+        "answer_4": "nothing before",
+        "right_answer" : "<strong>"
+    },
+    {
+        "title": "What is the correct HTML for creating a hyperlink?",
+        "answer_1": "<a url='http://www.w3schools.com'>W3Schools.com</a>",
+        "answer_2": "<a>http://www.w3schools.com</a>",
+        "answer_3": "<a href='http://www.w3schools.com'>W3Schools</a>",
+        "answer_4": "<a name='http://www.w3schools.com'>W3Schools.com</a>",
+        "right_answer" : "<a href='http://www.w3schools.com'>W3Schools</a>"
+    },
+    {
+        "title": "How can you make a numbered list?",
+        "answer_1": "<dl>",
+        "answer_2": "<ul>",
+        "answer_3": "<li>",
+        "answer_4": "<ol>",
+        "right_answer" : "<ol>"
+    },
+    {
+        "title": "What is the correct HTML for inserting an image?",
+        "answer_1": "<img src='' alt='MyImage'>",
+        "answer_2": "<img alt='MyImage'>image.gif</img>",
+        "answer_3": "<image src='' alt='MyImage'>",
+        "answer_4": "nothing before",
+        "right_answer" : "<image src='image.gif' alt='MyImage'>"
+    }
+]

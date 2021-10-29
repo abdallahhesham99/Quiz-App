@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+ul li {
+  list-style: none;
+}
+/* =========================================================== */
+
+.quiz-app {
+  background-color: #f6f6f6;
+  margin: 100px auto;
+  width: 800px;
+  padding: 20px;
+}
+.quiz-info,
+.quiz-footer {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.question-area {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 10px;
+}
+.answers-area {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  min-height: 183px;
+}
+.answers-area .answer {
+  background-color: #f6f6f6;
+}
+.answers-area .answer:not(:last-of-type) {
+  border-bottom: 2px solid #dfdfdf;
+}
+.answers-area .answer input[type="Radio"] {
+  margin-left: 10px;
+}
+.answers-area .answer input[type="Radio"]:checked + label {
+  color: #09c;
+  font-size: 16px;
+}
+.answers-area .answer label {
+  cursor: pointer;
+  font-weight: bold;
+  color: #777;
+  margin-left: 5px;
+  font-size: 14px;
+  display: inline-block;
+  width: 95%;
+  padding: 10px;
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  background-color: #09c;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 15px 0;
+  font-size: 18px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.submit-button:hover {
+  opacity: 0.5;
+}
+
+.quiz-footer .bullets {
+  display: flex;
+}
+.quiz-footer .bullets .bullet {
+  display: inline-block;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  background-color: rgb(173, 173, 173);
+  cursor: pointer;
+}
+.quiz-footer .bullets .bullet.active {
+  background-color: #09c;
+}
+.results {
+  display: none;
+  padding: 30px 0;
+}
+.results span {
+  font-weight: bold;
+}
+.results span.perfect {
+  color: rgb(0, 187, 0);
+}
+.results span.good {
+  color: rgb(255, 224, 0);
+}
+.results span.bad {
+  color: rgb(245, 57, 0);
+}
