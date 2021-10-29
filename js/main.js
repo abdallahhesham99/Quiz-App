@@ -165,5 +165,5 @@ function showResults(count) {
   } else {
     resultTitle = `<span class="bad">Bad : </span>you answered ${rightAnswers} from ${count}`;
   }
-  resultsView.innerHTML = resultTitle;
+  resultsView.innerHTML = resultTitle
 }
