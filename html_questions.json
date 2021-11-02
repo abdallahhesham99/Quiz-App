@@ -21,46 +21,46 @@
         "answer_2": "&lt;body&gt;",
         "answer_3": "&lt;h1&gt;",
         "answer_4": "nothing before",
-        "right_answer" : "&lt;h1&gt;"
+        "right_answer" : "<h1>"
     },
     {
         "title": "What is the correct HTML for adding a background color?",
-        "answer_1": "<background>yellow</background>",
-        "answer_2": "<body style='background-color: yellow'></body>",
-        "answer_3": "<body bg='yellow'>",
+        "answer_1": "&lt;background&gt;yellow</background&gt;",
+        "answer_2": "&lt;body style='background-color: yellow'&gt;&lt;/body&gt;",
+        "answer_3": "&lt;body bg='yellow'&gt;",
         "answer_4": "nothing before",
-        "right_answer" : "<body style='background-color: yellow'></body>"
+        "right_answer" :  "<body style='background-color: yellow'></body>"
     },
     {
         "title": "Choose the correct HTML element to define important text",
-        "answer_1": "<i>",
-        "answer_2": "<important>",
-        "answer_3": "<strong>",
+        "answer_1": "&lt;i&gt;",
+        "answer_2": "&lt;important&gt;",
+        "answer_3": "&lt;strong&gt;",
         "answer_4": "nothing before",
         "right_answer" : "<strong>"
     },
     {
         "title": "What is the correct HTML for creating a hyperlink?",
-        "answer_1": "<a url='http://www.w3schools.com'>W3Schools.com</a>",
-        "answer_2": "<a>http://www.w3schools.com</a>",
-        "answer_3": "<a href='http://www.w3schools.com'>W3Schools</a>",
-        "answer_4": "<a name='http://www.w3schools.com'>W3Schools.com</a>",
-        "right_answer" : "<a href='http://www.w3schools.com'>W3Schools</a>"
+        "answer_1": "&lt;a url='http://www.w3schools.com'>W3Schools.com&lt;/a&gt;",
+        "answer_2": "&lt;a&gt;http://www.w3schools.com&lt;/a&gt;",
+        "answer_3": "&lt;a href='http://www.w3schools.com'>W3Schools&lt;/a&gt;",
+        "answer_4": "&lt;a name='http://www.w3schools.com'>W3Schools.com&lt;/a&gt;",
+        "right_answer" :"<a href='http://www.w3schools.com'>W3Schools</a>"
     },
     {
         "title": "How can you make a numbered list?",
-        "answer_1": "<dl>",
-        "answer_2": "<ul>",
-        "answer_3": "<li>",
-        "answer_4": "<ol>",
-        "right_answer" : "<ol>"
+        "answer_1": "&lt;dl&gt;",
+        "answer_2": "&lt;ul&gt;",
+        "answer_3": "&lt;li&gt;",
+        "answer_4": "nothing before",
+        "right_answer" : "nothing before"
     },
     {
         "title": "What is the correct HTML for inserting an image?",
-        "answer_1": "<img src='' alt='MyImage'>",
-        "answer_2": "<img alt='MyImage'>image.gif</img>",
-        "answer_3": "<image src='' alt='MyImage'>",
+        "answer_1": "&lt;img src='' alt='MyImage'&gt;",
+        "answer_2": "&lt;img alt='MyImage'&gt;image.gif&lt;/img&gt;",
+        "answer_3": "&lt;image src='' alt='MyImage'&gt;",
         "answer_4": "nothing before",
-        "right_answer" : "<image src='image.gif' alt='MyImage'>"
+        "right_answer" : "<img src='' alt='MyImage'>"
     }
 ]

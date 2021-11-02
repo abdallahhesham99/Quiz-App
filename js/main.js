@@ -8,6 +8,8 @@ let bulletsUL = document.querySelector(".quiz-footer .bullets ul");
 
 let submitButton = document.querySelector(".submit-button");
 
+let countDownSpan = document.querySelector(".countdown span");
+
 let resultsView = document.querySelector(".results");
 // ===================================================================================
 //*==============================Set options==============================
@@ -15,6 +17,8 @@ let resultsView = document.querySelector(".results");
 //default value variable
 let currentIndex = 0;
 let rightAnswers = 0;
+
+let countDownInterval;
 
 // =================================================================================
 //*==============================Functions Declaration==============================
@@ -37,6 +41,8 @@ function getQuestions() {
       //Display questions in HTML
       displayQuestionData(myQuestions[currentIndex], QCount);
 
+      // countDown(3, QCount);
+
       //makeBullets depends on questions count function call
       makeBullets(QCount);
 
@@ -58,6 +64,9 @@ function getQuestions() {
         displayQuestionData(myQuestions[currentIndex], QCount);
 
         handleBullets();
+
+        clearInterval(countDownInterval);
+        // countDown(3, QCount);
 
         showResults(QCount);
       });
@@ -161,9 +170,32 @@ function showResults(count) {
   if (rightAnswers > count / 2 && count > rightAnswers) {
     resultTitle = `<span class="good">Good : </span>you answered ${rightAnswers} from ${count}`;
   } else if (rightAnswers === count) {
-    resultTitle = `<span class="good">Good : </span>you answered ${rightAnswers} from ${count}`;
+    resultTitle = `<span class="perfect">Perfect : </span>you answered ${rightAnswers} from ${count}`;
   } else {
     resultTitle = `<span class="bad">Bad : </span>you answered ${rightAnswers} from ${count}`;
   }
-  resultsView.innerHTML = resultTitle
+  resultsView.innerHTML = resultTitle;
+}
+//!==========================================================================
+
+function countDown(duration, count) {
+  if (currentIndex < count) {
+    let minutes, seconds;
+    countDownInterval = setInterval(function () {
+      minutes = parseInt(duration / 60);
+      seconds = parseInt(duration % 60);
+
+      minutes = minutes < 10 ? `0${minutes}` : minutes;
+      seconds = seconds < 10 ? `0${seconds}` : seconds;
+
+      countDownSpan.innerHTML = `${minutes} : ${seconds}`;
+
+      if (--duration < 0) {
+        clearInterval(countDownInterval);
+
+        //? red bullet
+        submitButton.click();
+      }
+    }, 1000);
+  }
 }
